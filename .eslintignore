@@ -1,0 +1,3 @@
+build/*.js
+config/*.js
+src/pages/navigater/js/*.js

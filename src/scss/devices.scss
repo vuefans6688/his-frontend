@@ -1,0 +1,24 @@
+@mixin width_fixed($width) {
+    width: $width;
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5){
+        width: 0.7*$width;
+    }
+    
+    @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2){
+        width: 0.7*$width;
+    }
+}
+
+@mixin width_flex($width) {
+    flex: 0 0 $width;
+    width: $width;
+    @media (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5){
+        flex: 0 0 0.7*$width;
+        width: 0.7*$width;
+    }
+    
+    @media (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2){
+        flex: 0 0 0.5*$width;
+        width: 0.5*$width;
+    }
+}

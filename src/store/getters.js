@@ -1,0 +1,28 @@
+const getter = {
+  token: state => state.token,
+  user: state => state.user,
+  clinic: state => state.clinic,
+  main_menu_status: state => state.main_menu_status,
+  main_mune_list: state => state.main_mune_list,
+  permissionList: state => state.permissionList,
+  print_setting: state => state.print_setting,
+  nations: state => state.nations,
+  customerID: state => state.customerID,
+  customerType: state => state.customerType,
+  customer_source: state => state.customer_source,
+  marriage: state => state.marriage,
+  medicineinfo: state => state.medicineinfo,
+  purchrecodecreate: state => state.purchrecodecreate,
+  feeList: state => state.feeList,
+  printMsg: state => state.printMsg,
+  bindSbMsg: state => state.bindSbMsg,
+  frequencyList: state => state.frequencyList,
+  usageList: state => state.usageList,
+  chinaUsage: state => state.chinaUsage,
+  doseUnitList: state => state.doseUnitList,
+  seriesCode: state => state.seriesCode,
+  cart: state => state.cart,
+  prepare_to_pay_list: state => state.prepare_to_pay_list,
+};
+
+export default getter;

@@ -1,0 +1,22 @@
+
+@media print {
+  .prescription {
+    width: 90%;
+    margin: 0 auto;
+    float: none;
+    font-size: 10pt !important;
+  }
+  @page { margin: 1.5cm; size: A4; }
+  html {
+    height: auto !important;
+  }
+  html,body {
+    background-color: white;
+  }
+  body {
+    font: 10pt "宋体", Georgia, "Times New Roman", Times, serif;
+    line-height: 1;
+    background: #fff !important;
+    color: #000;
+  }
+}

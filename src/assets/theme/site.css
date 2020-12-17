@@ -1,0 +1,134 @@
+  /* 清除浮动 */
+  .clearfix:before,
+  .clearfix:after {
+    display: table;
+    content: " ";
+  }
+  .clearfix:after {
+    clear: both;
+  }
+  .clearfix{
+    zoom: 1;
+  }
+/* 文字超出隐藏 */
+.textOver{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+/*栅格模式下input去padding  */
+.inputNoPadding .el-input__inner,
+.prescriptionInputs .el-input__inner{
+    padding: 0 5px;
+    text-align: center;
+}
+
+.prescriptionInputs .el-form-item{
+    margin-bottom: 10px;
+}
+
+.elCheckBox .el-checkbox__inner{
+    width: 20px;
+    height: 20px;
+}
+/* 修改多选框大小 */
+.elCheckBox .el-checkbox__inner::after{
+    height: 12px;
+    left: 7px;
+}
+.el_input_no_padding .el-input__inner{
+    padding: 0 5px;
+    min-width: 50px;
+    font-size: 14px;
+}
+
+.right_align .el-input__inner{
+    text-align: right;
+}
+.red_border .el-input__inner{
+    border: 1px solid red;
+}
+.ageCalculate .el-date-editor{
+    width: 100%;
+  }
+/* 日期输入框样式  class: my_titleInpStyle  */
+
+.my_titleInpStyle .el-date-editor{
+    width: 220px;
+    padding: 0 5px; 
+    margin-right: 10px; 
+}
+
+.my_titleInpStyle .el-range-input{
+    width: 35%;
+}
+/*修改医生工作站tag栏  */
+.PatientMes_style .el-tabs__item{
+    font-size: 16px;
+    /* padding: 0 30px;   */
+    text-align: center;
+}
+
+.white_nowrap_column .cell{
+    padding: 0;
+    white-space: nowrap;
+}
+
+.no_padding_left_table .el-table .cell{
+    padding-left: 0;
+    padding-right: 0; 
+}
+
+.scroll-content{
+    height: 100%;   /* 滚动区高度与父元素一致 */
+}
+.scrollbar-track{
+    cursor: pointer;
+    width: 20px;
+}
+.scrollbar-track, .scrollbar-thumb{
+    width: 20px;
+}
+/* 收费详情  */
+.myTableStyle .el-table__expanded-cell{
+     /* padding: 0;  */
+}
+.myTableStyle .el-form-item__content{
+   height: 30px;
+   line-height: 30px;
+}
+.myInput {
+    resize: vertical;
+    padding: 5px 15px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    width: 150px;
+    height: 32px;
+    font-size: 14px;
+    color: #5a5e66;
+    background-color: #fff;
+    border: 1px solid #d8dce5;
+    border-radius: 4px;
+    -webkit-transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+    transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+}
+.myInput:focus {
+    border: 1px solid #56BC94;
+}
+
+.staff .el-form-item--mini .el-form-item__label {
+    /* line-height: 20px; */
+}
+
+.medical_tip_slot .icon{
+    margin: 0 4px;
+    font-size: 14px;
+    transform: rotate(90deg);
+}
+
+/* el-tabs */
+.mini_eltabs .el-tabs__item{
+    height: 32px;
+    line-height: 32px;
+}
